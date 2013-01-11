@@ -2,23 +2,23 @@
 
 import urllib, calendar, os
 
-os.chdir("/home/takuya/tst")
+os.chdir("/home/takuya/bbt/suntoday")
 
 
 cal = calendar.Calendar()
 
-yearstart = 2010
+yearstart = 2011
 yearend = 2012
 
 
 for i in range(yearstart,yearend):
     os.mkdir(str(i))
     for j in range(1,13):
-        dirname = str(i)+"/"+str(j)
+        dirname = str(i)+"/"+str(j).zfill(2)
         os.mkdir(dirname)
         for k in cal.itermonthdays(i,j):
             if k==0: continue
-            fname = str(i)+"/"+str(j)+"/"+str(k)+".json"
+            fname = str(i)+"/"+str(j).zfill(2)+"/"+str(k).zfill(2)+".json"
             fp = open(fname, "w")
             datestart = str(i)+"-"+str(j)+"-"+str(k)
             dateend = str(i)+"-"+str(j)+"-"+str(k+1)
