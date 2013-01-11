@@ -1,4 +1,5 @@
 solar-flare-prediction
 ======================
 
-predict solar flare
+Let us predict solar flare.
+
