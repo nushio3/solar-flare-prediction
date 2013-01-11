@@ -12,8 +12,8 @@ yearend = 2012
 
 
 for i in range(yearstart,yearend):
-    #os.mkdir(str(i))
-    for j in range(12,13):
+    os.mkdir(str(i))
+    for j in range(1,13):
         dirname = str(i)+"/"+str(j)
         os.mkdir(dirname)
         for k in cal.itermonthdays(i,j):
