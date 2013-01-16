@@ -7,8 +7,8 @@ os.chdir("/home/takuya/bbt/goes")
 
 cal = calendar.Calendar()
 
-yearstart = 2011
-yearend = 2012
+yearstart = 2010
+yearend = 2013
 
 
 for i in range(yearstart,yearend):
